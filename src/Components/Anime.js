@@ -1,5 +1,8 @@
 import AnimeItem from './AnimeItem'
 import {useEffect , useState} from 'react'
+import '../App.css'; // Use this path to go up one level and access App.css
+
+
 
 
 function Anime() {
@@ -29,7 +32,7 @@ function Anime() {
    {animes.map((item , index) => (
    <AnimeItem
    title= {item.title_english}
-   startDate = {item.aired.string}
+   date = {item.aired.string}
    poster = {item.images.jpg.image_url}
    key = {index}
   />  

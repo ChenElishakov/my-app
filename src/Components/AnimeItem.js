@@ -1,26 +1,16 @@
-
+import '../App.css'; // Use this path to go up one level and access App.css
 
 
 function AnimeItem(props) {
-
-  console.log(props.startDate);
-
-return (
-
-<div >
-
-<div>{props.startDate}</div>
-
-<img src = {props.poster} ></img>
-
-<div>{props.title}</div>
-
-</div>
-
-
-)
-
-
+  return (
+    <div className="anime-item">
+      <img src={props.poster} alt={props.title} />
+      <div className="anime-details">
+        <div className="anime-title">{props.title}</div>
+        <div className="anime-date">{props.date}</div>
+      </div>
+    </div>
+  );
 }
 
-export default AnimeItem
+export default AnimeItem;

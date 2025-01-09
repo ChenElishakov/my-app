@@ -4,6 +4,7 @@ import Anime from './Components/Anime'
 import {useEffect , useState} from 'react'
 
 
+
 function App() {
 
   return (
